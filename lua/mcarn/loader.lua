@@ -1,5 +1,5 @@
 local M = {}
-function M.loadrequire(name)
+function M.reqload(name)
     local ok, _ = pcall(require, name)
     if not ok then
         print("Plugin:" .. name .. " missing")
