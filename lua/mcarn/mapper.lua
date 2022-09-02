@@ -1,19 +1,21 @@
 local M = {}
+local options = { silent = true }
 
-function M.map(m, k, v)
-    vim.keymap.set(m, k, v, { silent = true })
+function M.map(m, lhs, rhs, opts)
+    opts = opts or options
+    vim.keymap.set(m, lhs, rhs, opts)
 end
 
-function M.nmap(k, v)
-    M.map("n", k, v)
+function M.nmap(lhs, rhs, opts)
+    M.map("n", lhs, rhs, opts)
 end
 
-function M.vmap(k, v)
-    M.map("v", k, v)
+function M.vmap(lhs, rhs, opts)
+    M.map("v", lhs, rhs, opts)
 end
 
-function M.imap(k, v)
-    M.map("i", k, v)
+function M.imap(lhs, rhs, opts)
+    M.map("i", lhs, rhs, opts)
 end
 
 return M
