@@ -1,9 +1,9 @@
 local M = {}
 local options = { silent = true }
 
-function M.map(m, lhs, rhs, opts)
+function M.map(mode, lhs, rhs, opts)
     opts = opts or options
-    vim.keymap.set(m, lhs, rhs, opts)
+    vim.keymap.set(mode, lhs, rhs, opts)
 end
 
 function M.nmap(lhs, rhs, opts)
