@@ -1,4 +1,5 @@
 local M = {}
+
 local options = { silent = true }
 
 function M.map(mode, lhs, rhs, opts)
