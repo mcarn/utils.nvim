@@ -1,12 +1,11 @@
 --- Mapper module
--- @module mapper 
+-- @module mapper
 -- @alias M
 local M = {}
 
 local options = { silent = true }
 
-
--- Generic map function 
+-- Generic map function
 -- @param mode vim mode n, v, i
 -- @param lhs left hand side of the mapping
 -- @param rhs right hand side of the mapping
@@ -17,7 +16,7 @@ function M.map(mode, lhs, rhs, opts)
     vim.keymap.set(mode, lhs, rhs, opts)
 end
 
--- Normal map function 
+-- Normal map function
 -- @param lhs left hand side of the mapping
 -- @param rhs right hand side of the mapping
 -- @param opts opt arguments
@@ -26,7 +25,7 @@ function M.nmap(lhs, rhs, opts)
     M.map("n", lhs, rhs, opts)
 end
 
--- Visual map function 
+-- Visual map function
 -- @param lhs left hand side of the mapping
 -- @param rhs right hand side of the mapping
 -- @param opts opt arguments
@@ -35,7 +34,7 @@ function M.vmap(lhs, rhs, opts)
     M.map("v", lhs, rhs, opts)
 end
 
--- Insert map function 
+-- Insert map function
 -- @param lhs left hand side of the mapping
 -- @param rhs right hand side of the mapping
 -- @param opts opt arguments
