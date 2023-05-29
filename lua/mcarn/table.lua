@@ -19,7 +19,7 @@ end
 function M.keys(table)
     local i = 0
     local keyset = {}
-    for k, v in pairs(table) do
+    for k, _ in pairs(table) do
         i = i + 1
         keyset[i] = k
     end
