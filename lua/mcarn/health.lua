@@ -9,7 +9,7 @@ local M = {}
 function M.check()
     start("utils.nvim")
 
-    ok("utils.nvim OK")
+    ok("utils.nvim")
 end
 
 return M
