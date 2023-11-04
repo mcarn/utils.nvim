@@ -23,3 +23,22 @@ A simple [neovim](https://neovim.io) plugin with some util methods.
 local plugins = {"mcarn/utils.nvim"}
 require("lazy").setup(plugins, opts)
 ```
+
+
+## Usage
+
+### Loader
+```lua
+local reqload = require("mcarn.loader").reqload
+reqload("config.gruvbox")
+```
+### Mapper
+```lua
+local nmap = require("mcarn.mapper").nmap
+nmap("n", "nzzzv")
+```
+### Table
+```lua
+local contains = require("mcarn.table").contains
+contains(opt, "key") -- returns true or false
+```
