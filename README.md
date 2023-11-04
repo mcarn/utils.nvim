@@ -1,4 +1,4 @@
-🛠️ util.nvim
+🛠️ utils.nvim
 ============
 
 
